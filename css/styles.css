@@ -1,0 +1,134 @@
+/* ===== Global Variables ===== */
+:root {
+  --primary-color: #4CAF50; /* Green */
+  --secondary-color: #333;  /* Dark Gray */
+  --text-color: #333;       /* Body text color */
+  --background-color: #f9f9f9; /* Light Gray Background */
+  --link-hover-color: #2e7d32; /* Darker green for hover */
+  --font-family: 'Arial', sans-serif; /* Default font */
+  --content-width: 800px; /* Maximum content width */
+}
+
+/* ===== General Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Body Styling ===== */
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Header ===== */
+header {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+/* ===== Main Content ===== */
+main {
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: var(--content-width);
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+main h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+main ul {
+  list-style: disc;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+main ul li {
+  margin: 0.5rem 0;
+}
+
+main p {
+  margin-bottom: 1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  background: var(--secondary-color);
+  color: white;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+  header nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  main {
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ===== Icon Support ===== */
+/* Adds margin to icons in navigation links */
+header nav ul li a i {
+  margin-right: 5px;
+}
+
+/* ===== Custom Hover Effects for Icons ===== */
+header nav ul li a:hover i {
+  color: var(--link-hover-color);
+}
